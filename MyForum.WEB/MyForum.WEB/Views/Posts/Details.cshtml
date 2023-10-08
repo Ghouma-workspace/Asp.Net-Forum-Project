@@ -1,0 +1,95 @@
+﻿@model IEnumerable<MyForum.BL.Entities.Comment>
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@ViewData["PostTitle"]</h1>
+
+<div>
+    <h3>@ViewData["PostDescription"]</h3>
+    <hr />
+    <h4>Content</h4>
+    <p>@ViewData["PostContent"]</p>
+</div>
+<hr />
+<h4>Comments</h4>
+<hr />
+<table class="table">
+    <thead>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="align-middle col-3">
+                    @if (item.User.ProfilePicture != null)
+                    {
+                        <img style="width:40px;height:40px; object-fit:cover; border-radius:30px" src="data:image/*;base64,@(Convert.ToBase64String(item.User.ProfilePicture))" />  <b>@item.User.FirstName @item.User.LastName</b>
+                    }
+                    else
+                    {
+                        <img src="~/images/signup-icon.webp" height="15" /> <b>@item.User.FirstName @item.User.LastName</b>
+                    }
+                </td>
+                <td class="align-middle col-6">
+                    @if (item.Text != null)
+                    {
+                        @Html.DisplayFor(modelItem => item.Text)
+                    }
+                    @if (item.Picname != null)
+                    {
+                        <img src="@("~/CommentImage/"+ item.Picname)" asp-append-version="true" width="100px" height="150px" />
+                    }
+                </td>
+                <td class="align-middle col-3">
+                    @foreach (var u in ViewBag.CommentsUsed)
+                    {
+                        @if (u.ToString() == item.CommentId.ToString())
+                        {
+                            <a class="btn btn-outline-primary" asp-controller="Comments" asp-action="Edit" asp-route-id="@item.CommentId"><i class="bi bi-ticket-detailed-fill"></i> Edit</a> 
+                            <a class="btn btn-danger text-white" asp-controller="Comments" asp-action="Delete" asp-route-id="@item.CommentId"><i class="bi bi-trash"></i> Delete</a>
+                        }
+                    }
+                    <a class="btn btn-outline-success" asp-controller="Repls" asp-action="Create" asp-route-id="@item.CommentId"><i class="bi bi-stickies-fill">Reply</i></a>
+                </td>
+            </tr>
+            if (item.Repls != null)
+            {
+                foreach (var elemnt in item.Repls)
+                {
+                    <tr>
+                        <td class="col-1"></td>
+                        <td class="align-middle col-2">
+                            @if (item.User.ProfilePicture != null)
+                            {
+                                <img style="width:40px;height:40px; object-fit:cover; border-radius:30px" src="data:image/*;base64,@(Convert.ToBase64String(elemnt.User.ProfilePicture))" />  <b>@elemnt.User.FirstName @elemnt.User.LastName</b>
+                            }
+                            else
+                            {
+                                <img src="~/images/signup-icon.webp" height="15" /> <b>@elemnt.User.FirstName @elemnt.User.LastName</b>
+                            }
+                        </td>
+                        <td class="align-middle">
+                            @if (elemnt.Text != null)
+                            {
+                                @Html.DisplayFor(modelItem => elemnt.Text)
+                            }
+                            @if (elemnt.Picname != null)
+                            {
+                                <img src="@("~/Replimage/"+ elemnt.Picname)" asp-append-version="true" width="70px" height="100px" />
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+        }
+    </tbody>
+</table>
+
+<br />
+<br />
+<div>
+    <a class="btn btn-outline-success" asp-controller="Comments" asp-action="Create" asp-route-id="@ViewData["idpost"]"><i class="bi bi-stickies-fill"></i> Add a New Comment</a>
+    <a class="btn btn-outline-warning" asp-controller="Blogs" asp-action="Details" asp-route-id="@ViewData["idblog"]"><i class="bi bi-back"></i> Back</a>
+</div>

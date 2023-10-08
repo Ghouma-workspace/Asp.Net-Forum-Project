@@ -1,0 +1,68 @@
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.deps.json
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.runtimeconfig.json
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.dll
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.pdb
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.BL.dll
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.BL.pdb
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.csproj.AssemblyReference.cache
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.AssemblyInfoInputs.cache
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.AssemblyInfo.cs
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.csproj.CoreCompileInputs.cache
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.csproj.CopyComplete
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.dll
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\refint\MyForum.DAL.dll
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.pdb
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.genruntimeconfig.cache
+D:\Visual Stedio\période 2\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\ref\MyForum.DAL.dll
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.deps.json
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.runtimeconfig.json
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.dll
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.pdb
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.BL.dll
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.BL.pdb
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.csproj.AssemblyReference.cache
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.AssemblyInfoInputs.cache
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.AssemblyInfo.cs
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.csproj.CoreCompileInputs.cache
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.csproj.CopyComplete
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.dll
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\refint\MyForum.DAL.dll
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.pdb
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.genruntimeconfig.cache
+D:\Visual Stedio\période 2\Forum Asp\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\ref\MyForum.DAL.dll
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.deps.json
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.runtimeconfig.json
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.dll
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.pdb
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.BL.dll
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.BL.pdb
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.csproj.AssemblyReference.cache
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.AssemblyInfoInputs.cache
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.AssemblyInfo.cs
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.csproj.CoreCompileInputs.cache
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.csproj.CopyComplete
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.dll
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\refint\MyForum.DAL.dll
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.pdb
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.genruntimeconfig.cache
+D:\Visual Stedio\période 2\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\ref\MyForum.DAL.dll
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.deps.json
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.runtimeconfig.json
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.dll
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.DAL.pdb
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.BL.dll
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\bin\Debug\net6.0\MyForum.BL.pdb
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.csproj.AssemblyReference.cache
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.AssemblyInfoInputs.cache
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.AssemblyInfo.cs
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.csproj.CoreCompileInputs.cache
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.csproj.CopyComplete
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.dll
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\refint\MyForum.DAL.dll
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.pdb
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\MyForum.DAL.genruntimeconfig.cache
+D:\Visual Stedio\période 2\New folder\Forum Asp Version Finale\MyForum.WEB\MyForum.DAL\obj\Debug\net6.0\ref\MyForum.DAL.dll

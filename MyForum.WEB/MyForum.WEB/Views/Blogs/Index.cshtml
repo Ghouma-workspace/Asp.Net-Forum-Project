@@ -1,0 +1,75 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@using MyForum.BL.Entities;
+@model IEnumerable<MyForum.BL.Entities.Blog>
+@inject UserManager<User> UserManager
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+    int i = 1;
+}
+
+<h1>Blogs</h1>
+<br />
+
+<br />
+@foreach (var element in ViewBag.Themes)
+{
+    
+    <h3 style="background-color: @ViewData[element.ToString()]">Theme @element.ToString()</h3>
+
+    <table class="table tabcc">
+        <thead>
+            <tr class="text-center row">
+                <th class="align-middle col-2">
+                    @Html.DisplayNameFor(model => model.Url)
+                </th>
+                <th class="align-middle col-5">
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th class="align-middle col-2">
+                    Created By
+                </th>
+                <th class="col-3"></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model) {
+            if (item.Theme.ThemeTitle == element.ToString())
+            {
+                <tr class="text-center row">
+                    <td class="align-middle col-2">
+                        @Html.DisplayFor(modelItem => item.Url)
+                    </td>
+                    <td class="align-middle col-5">
+                        @Html.DisplayFor(modelitem => item.Description)
+                    </td>
+                    <td class="align-middle col-2">
+                            @foreach (var p in ViewData.Keys)
+                            {
+                                if (p.ToString() == item.Id){
+                                    if (item.User.ProfilePicture != null)
+                                    {
+                                        <img style="width:40px;height:40px; object-fit:cover; border-radius:30px" src="data:image/*;base64,@(Convert.ToBase64String(item.User.ProfilePicture))" />  <b>@ViewData[p.ToString()]</b>
+                                    }
+                                    else
+                                    {
+                                        <img src="~/images/signup-icon.webp" height="15" /> <b>@ViewData[p.ToString()]</b>
+                                    }
+                                }
+                            }
+                    </td>
+                    <td class="align-middle col-3">
+                        <a class="btn btn-outline-info" asp-action="Details" asp-route-id="@item.BlogId"><i class="bi bi-eye"></i> Details</a>
+                    </td>
+                </tr>
+            }
+        }
+        </tbody>
+    </table>
+    i++;
+    <hr />
+    <br />
+}

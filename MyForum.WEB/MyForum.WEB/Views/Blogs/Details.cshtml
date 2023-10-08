@@ -1,0 +1,62 @@
+﻿@model IEnumerable<MyForum.BL.Entities.Post>
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+@if (ViewData["user_id"] == "true")
+{
+    <div>
+    <a class="btn btn-outline-success" asp-controller="Posts" asp-action="Create" asp-route-id="@ViewData["idblog"]"><i class="bi bi-stickies-fill"></i> Create a New Post</a>
+    </div>
+}
+
+<br />
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 col-xs-6 border-primary mb-3">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="card-header text-white bg-info">
+                            <p class="card-text">
+                                <h5 class="card-title">
+                                    @item.Title
+                                </h5>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="@("~/images/"+ item.Picname)" asp-append-version="true" width="200px" height="250px" />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <p class="card-text"><b>Title: </b>@item.Title</p>
+                            <p class="card-text"><b>Description: </b>@item.Description</p>
+                            <p class="card-text"><b>Publish Time: </b>@item.PublishedDateTime.ToString("dddd, dd MMMM yyyy HH:mm:ss")</p>
+                        </div>
+                    </div>
+                     <div class="col-md-12">
+                        <div class="card-footer ">
+                            <p class="card-text">
+                                <a class="btn btn-outline-primary col-12" asp-controller="Posts" asp-action="Details" asp-route-id="@item.PostId">
+                                    <i class="bi bi-eye-fill"></i> Show Details
+                                </a>
+                                @if (ViewData["user_id"] == "true")
+                                {
+                                    <a class="btn btn-outline-primary col-5" asp-controller="Posts" asp-action="Edit" asp-route-id="@item.PostId"><i class="bi bi-ticket-detailed-fill"></i> Edit</a>
+                                    <a class="btn btn-danger text-white offset-1 col-5 align-content-end" asp-controller="Posts" asp-action="Delete" asp-route-id="@item.PostId"><i class="bi bi-trash"></i> Delete</a>
+                                }
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<div>
+    <a class="btn btn-outline-warning" asp-action="Index"><i class="bi bi-back"></i> Back</a>
+</div>

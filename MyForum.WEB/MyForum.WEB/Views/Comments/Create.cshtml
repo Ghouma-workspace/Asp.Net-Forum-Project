@@ -1,0 +1,44 @@
+﻿@model MyForum.BL.Entities.Comment
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Comment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Text" class="control-label"></label>
+                <input asp-for="Text" class="form-control" />
+                <span asp-validation-for="Text" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Commentpic" class="control-label"></label>
+                <input asp-for="Commentpic" accept="CommentImage/*" />
+                <span asp-validation-for="Commentpic" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="PostId" class="form-control" value="@int.Parse(ViewBag.idpost.ToString())" style="display: none;" />
+                <span asp-validation-for="PostId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-outline-warning" asp-controller="Posts" asp-action="Details" asp-route-id="@int.Parse(ViewBag.idpost.ToString())"><i class="bi bi-back"></i> Back</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

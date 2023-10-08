@@ -1,0 +1,42 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using MyForum.BL.Entities;
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="dropdown">
+        @if (UserManager.GetUserAsync(User).Result.ProfilePicture != null)
+        {
+            <button class="nav-link btn btn-outline-success dropdown-toggle" type="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <img style="width:40px;height:40px; object-fit:cover; border-radius:30px" src="data:image/*;base64,@(Convert.ToBase64String(UserManager.GetUserAsync(User).Result.ProfilePicture))" />  <b>@User.Identity?.Name</b>
+            </button>
+        }
+        else
+        {
+            <button class="nav-link btn btn-outline-success dropdown-toggle" type="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="~/images/signup-icon.webp" height="15" />  <b>@User.Identity?.Name</b>
+            </button>
+        }
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"><i class="bi bi-gear-fill"></i> Settings</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-people-fill"></i> friends</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+                <form class="dropdown-item form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button type="submit" class="nav-link btn btn-link text-dark"><i class="bi bi-door-closed-fill"></i> Logout</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+}
+else
+{
+    <a class="btn btn-outline-primary nav-item my-2 my-sm-0" asp-area="Identity" asp-page="/Account/Register">
+        <i class="bi bi-person-plus"></i>Register
+    </a>
+
+    <a class="btn btn-outline-success nav-item my-2 my-sm-0" asp-area="Identity" asp-page="/Account/Login">
+        <i class="bi bi-box-arrow-in-right"></i>Login
+    </a>
+}

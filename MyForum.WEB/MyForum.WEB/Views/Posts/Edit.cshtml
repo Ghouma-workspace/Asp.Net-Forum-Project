@@ -1,0 +1,57 @@
+﻿@model MyForum.BL.Entities.Post
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Post</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PostId" />
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Content" class="control-label"></label>
+                <input asp-for="Content" class="form-control" />
+                <span asp-validation-for="Content" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Coverpic" class="control-label"></label>
+                <input asp-for="Coverpic" accept="image/*" />
+                <span asp-validation-for="Coverpic" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PublishedDateTime" class="control-label"></label>
+                <input asp-for="PublishedDateTime" class="form-control" />
+                <span asp-validation-for="PublishedDateTime" class="text-danger"></span>
+            </div>
+            <div>
+                <input asp-for="BlogId" type="hidden" class="form-control" value="@Model.BlogId" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="Blogs" asp-action="Details" asp-route-id="@Model.BlogId"><i class="bi bi-back"></i> Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

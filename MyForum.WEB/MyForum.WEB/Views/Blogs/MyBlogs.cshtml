@@ -1,0 +1,62 @@
+﻿@model IEnumerable<MyForum.BL.Entities.Blog>
+
+@{
+    ViewData["Title"] = "My Blogs";
+}
+
+@{
+    int i = 1;
+}
+
+<h1>My Blogs</h1>
+<br />
+
+<div class="row">
+    <a class="btn btn-outline-success col-3" asp-controller="Themes" asp-action="Create"><i class="bi bi-stickies-fill"></i> Create A New Theme</a>
+    <a class="btn btn-outline-success offset-6 col-3" asp-action="Create"><i class="bi bi-stickies-fill"></i> Create A New Blog</a>
+</div>
+
+<br />
+@while (ViewData[i.ToString()] != null)
+{
+
+    <h3>Theme @ViewData[i.ToString()]?.ToString()</h3>
+
+    <table class="table tabcc">
+        <thead>
+            <tr class="text-center">
+                <th class="col-2">
+                    @Html.DisplayNameFor(model => model.Url)
+                </th>
+                <th class="col-5">
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th class="col-5"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                if (item.ThemeId == i)
+                {
+                    <tr class="text-center">
+                        <td class="align-middle col-2">
+                            @Html.DisplayFor(modelItem => item.Url)
+                        </td>
+                        <td class="align-middle col-5">
+                            @Html.DisplayFor(modelitem => item.Description)
+                        </td>
+                        <td class="align-middle col-5">
+                            <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@item.BlogId"><i class="bi bi-ticket-detailed-fill"></i> Edit</a> |
+                            <a class="btn btn-outline-info" asp-action="Details" asp-route-id="@item.BlogId"><i class="bi bi-eye"></i> Details</a> |
+                            <a class="btn btn-danger text-white" asp-action="Delete" asp-route-id="@item.BlogId"><i class="bi bi-trash"></i> Delete</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+    i++;
+    <hr />
+    <br />
+}
